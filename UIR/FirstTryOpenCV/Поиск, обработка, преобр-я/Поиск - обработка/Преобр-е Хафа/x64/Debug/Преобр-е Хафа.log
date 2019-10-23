@@ -1,0 +1,7 @@
+﻿  Преобр-е Хафа.cpp
+C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Поиск, обработка, преобр-я\Поиск - обработка\Преобр-е Хафа\Преобр-е Хафа.cpp(55): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Поиск, обработка, преобр-я\Поиск - обработка\Преобр-е Хафа\Преобр-е Хафа.cpp(84): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Поиск, обработка, преобр-я\Поиск - обработка\Преобр-е Хафа\Преобр-е Хафа.cpp(86): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Поиск, обработка, преобр-я\Поиск - обработка\Преобр-е Хафа\Преобр-е Хафа.cpp(100): warning C4244: *=: преобразование "float" в "short", возможна потеря данных
+C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Поиск, обработка, преобр-я\Поиск - обработка\Преобр-е Хафа\Преобр-е Хафа.cpp(108): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Преобр-е Хафа.vcxproj -> C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Поиск, обработка, преобр-я\Поиск - обработка\x64\Debug\Преобр-е Хафа.exe

@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  Поиск об-а по RGB.cpp
+c:\users\elias\desktop\visual_studio\уир\firsttryopencv\обработка изображений\поиск об-а по rgb\поиск об-а по rgb.cpp(98): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\elias\desktop\visual_studio\уир\firsttryopencv\обработка изображений\поиск об-а по rgb\поиск об-а по rgb.cpp(99): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\elias\desktop\visual_studio\уир\firsttryopencv\обработка изображений\поиск об-а по rgb\поиск об-а по rgb.cpp(102): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\elias\desktop\visual_studio\уир\firsttryopencv\обработка изображений\поиск об-а по rgb\поиск об-а по rgb.cpp(103): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\elias\desktop\visual_studio\уир\firsttryopencv\обработка изображений\поиск об-а по rgb\поиск об-а по rgb.cpp(106): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\elias\desktop\visual_studio\уир\firsttryopencv\обработка изображений\поиск об-а по rgb\поиск об-а по rgb.cpp(107): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Поиск об-а по RGB.vcxproj -> C:\Users\Elias\Desktop\Visual_Studio\УИР\FirstTryOpenCV\Обработка изображений\x64\Debug\Поиск об-а по RGB.exe

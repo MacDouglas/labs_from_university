@@ -1,0 +1,4 @@
+﻿  Лаба_6.cpp
+c:\users\elias\desktop\visual_studio\ta\семестр_2\лаба_6\лаба_6.cpp(13): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+c:\users\elias\desktop\visual_studio\ta\семестр_2\лаба_6\лаба_6.cpp(22): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Лаба_6.vcxproj -> C:\Users\Elias\Desktop\Visual_Studio\TA\Семестр_2\Debug\Лаба_6.exe

@@ -1,0 +1,11 @@
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\bin\Debug\netcoreapp2.1\Convert_testing.deps.json
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\bin\Debug\netcoreapp2.1\Convert_testing.runtimeconfig.json
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\bin\Debug\netcoreapp2.1\Convert_testing.runtimeconfig.dev.json
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\bin\Debug\netcoreapp2.1\Convert_testing.dll
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\bin\Debug\netcoreapp2.1\Convert_testing.pdb
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\obj\Debug\netcoreapp2.1\Convert_testing.csprojAssemblyReference.cache
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\obj\Debug\netcoreapp2.1\Convert_testing.csproj.CoreCompileInputs.cache
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\obj\Debug\netcoreapp2.1\Convert_testing.AssemblyInfoInputs.cache
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\obj\Debug\netcoreapp2.1\Convert_testing.AssemblyInfo.cs
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\obj\Debug\netcoreapp2.1\Convert_testing.dll
+C:\Users\Elias\Desktop\Visual_Studio\Обучение\C#\Разные разности\Convert_testing\obj\Debug\netcoreapp2.1\Convert_testing.pdb

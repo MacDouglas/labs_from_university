@@ -1,0 +1,3 @@
+﻿  testing.cpp
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_BM\Lab's_BM\testing\testing.cpp(25,21): warning C4018:  <=: несоответствие типов со знаком и без знака
+  testing.vcxproj -> C:\Users\stalk_000\Desktop\VSproject's\Lab's_BM\Lab's_BM\Debug\testing.exe

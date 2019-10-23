@@ -1,0 +1,24 @@
+﻿  Person.cpp
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(5): error C2061: синтаксическая ошибка: идентификатор "string"
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(8): error C3646: name: неизвестный спецификатор переопределения
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(8): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(9): error C3646: bd: неизвестный спецификатор переопределения
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(5): error C2065: n: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(5): error C2065: b: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(5): error C2614: Person: недопустимая инициализация члена: "name" не является базовым классом или членом
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.h(5): error C2614: Person: недопустимая инициализация члена: "bd" не является базовым классом или членом
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(6): error C2065: string: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(6): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "n"
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(6): error C2065: n: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(6): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(6): error C2065: b: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(6): error C2448: bd: вероятно, инициализатор, использующий стиль функции, является определением функции
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(9): error C2065: cout: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\person.cpp(9): error C2065: endl: необъявленный идентификатор
+  Инициализация.cpp
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\инициализация.cpp(24): error C2065: Person: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\инициализация.cpp(24): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "p"
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\инициализация.cpp(24): error C3861: p: идентификатор не найден
+c:\users\elias\desktop\visual_studio\обучение\примеры\инициализация\инициализация.cpp(25): error C2065: p: необъявленный идентификатор
+  Создание кода...

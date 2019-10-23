@@ -1,0 +1,8 @@
+﻿  inheritance.cpp
+  Lab_3.cpp
+  matrix.cpp
+  pch.cpp
+  vector.cpp
+C:\Users\Elias\Desktop\Visual_Studio\Lab's_OOP\OOP_Lab's\Lab_3\vector.cpp(75,8): error C3861:  findtype: идентификатор не найден
+  Создание кода...
+C:\Users\Elias\Desktop\Visual_Studio\Lab's_OOP\OOP_Lab's\Lab_3\vector.cpp(89,8): error C3861:  findtype: идентификатор не найден

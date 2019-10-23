@@ -1,0 +1,25 @@
+﻿  Bank_acc.cpp
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(9): error C3646: name: неизвестный спецификатор переопределения
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(14): error C2061: синтаксическая ошибка: идентификатор "string"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(17): error C2061: синтаксическая ошибка: идентификатор "string"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(9): error C2511: bank_space::Bank_acc::Bank_acc(std::string,double,double,int): перегруженная функция-член не найдена в "bank_space::Bank_acc"
+  c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(6): note:  см. объявление "bank_space::Bank_acc"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(10): error C2660: bank_space::Bank_acc::set_name: функция не принимает 1 аргументов
+  c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(17): note:  см. объявление "bank_space::Bank_acc::set_name"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(11): error C2352: bank_space::Bank_acc::set: недопустимый вызов нестатической функции-члена
+  c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(16): note:  см. объявление "bank_space::Bank_acc::set"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(12): error C2352: bank_space::Bank_acc::show: недопустимый вызов нестатической функции-члена
+  c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(18): note:  см. объявление "bank_space::Bank_acc::show"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(30): error C2511: void bank_space::Bank_acc::set_name(std::string): перегруженная функция-член не найдена в "bank_space::Bank_acc"
+  c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(6): note:  см. объявление "bank_space::Bank_acc"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(31): error C2065: name: необъявленный идентификатор
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.cpp(35): error C2065: name: необъявленный идентификатор
+  Example_1.cpp
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(9): error C3646: name: неизвестный спецификатор переопределения
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(14): error C2061: синтаксическая ошибка: идентификатор "string"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\bank_acc.h(17): error C2061: синтаксическая ошибка: идентификатор "string"
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\example_1.cpp(14): error C2661: bank_space::Bank_acc::Bank_acc: нет перегруженной функции, принимающей 4 аргументов
+c:\users\elias\desktop\visual_studio\обучение\книга\oop\example_1\example_1.cpp(15): error C2661: bank_space::Bank_acc::Bank_acc: нет перегруженной функции, принимающей 4 аргументов
+  Создание кода...
