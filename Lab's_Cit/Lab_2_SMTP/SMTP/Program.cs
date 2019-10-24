@@ -10,75 +10,61 @@ namespace SMTP
     {
         static void Main(string[] args)
         {
-            ////Console.WriteLine("Hello World!");
-
-            //TcpClient tcpClient = new TcpClient();
-
-            ////подключения по IP и по указанному номеру порта.
-
-            //tcpClient.Connect("imap.mail.ru", 993);
-
-            ////получение потока
-
-            //NetworkStream networkStream = tcpClient.GetStream();
-
-            ////поток для чтения
-
-            //StreamReader clientStreamReader = new StreamReader(networkStream);
-
-            ////поток для записи
-
-            //StreamWriter clientStreamWriter = new StreamWriter(networkStream);
-
-            //while (true)
-
-            //{
-
-            //    clientStreamReader.Read();
-            
-            //}
             string server = "smtp.mail.ru";
 
             TcpClient client = new TcpClient(server, 465);
 
             var stream = client.GetStream();
-
             var sslStream = new SslStream(stream);
 
             sslStream.AuthenticateAsClient(server);
 
             var writer = new StreamWriter(sslStream);
-
             var reader = new StreamReader(sslStream);
 
-            writer.WriteLine("EHLO " + server);
-
+            writer.WriteLine("EHLO smtp.mail.ru");
             writer.Flush();
-
+            Console.WriteLine(reader.ReadLine());
+            Console.WriteLine(reader.ReadLine());
+            Console.WriteLine(reader.ReadLine());
+            Console.WriteLine(reader.ReadLine());
+            Console.WriteLine(reader.ReadLine());
             Console.WriteLine(reader.ReadLine());
 
-            writer.WriteLine("MAIL FROM " + "stalkergta-99@mail.ru");
-
+            writer.WriteLine("AUTH LOGIN");
             writer.Flush();
-
             Console.WriteLine(reader.ReadLine());
 
-            writer.WriteLine("RCPT TO " + "stalkergta-99@mail.ru");
-
+            writer.WriteLine("bWlrZXdvbGY5OTEyMTAxQGdtYWlsLmNvbQ==");
             writer.Flush();
+            Console.WriteLine(reader.ReadLine());
 
+            writer.WriteLine("UWhVLXhUQy1CM1MtQkJq");
+            writer.Flush();
+            Console.WriteLine(reader.ReadLine());
+
+            writer.WriteLine("MAIL FROM: mikewolf9912101@gmail.com");
+            writer.Flush();
+            Console.WriteLine(reader.ReadLine());
+
+            writer.WriteLine("RCPT TO: qasmoke123@mail.ru");
+            writer.Flush();
             Console.WriteLine(reader.ReadLine());
 
             writer.WriteLine("DATA");
-
             writer.Flush();
-
             Console.WriteLine(reader.ReadLine());
 
-            writer.WriteLine("RSET");
+            //writer.WriteLine("SUBJECT: test");
+            //writer.Flush();
+            //Console.WriteLine(reader.ReadLine());
 
+            writer.WriteLine("test \r\n.");
             writer.Flush();
+            Console.WriteLine(reader.ReadLine());
 
+            writer.WriteLine("QUIT");
+            writer.Flush();
             Console.WriteLine(reader.ReadLine());
         }
     }

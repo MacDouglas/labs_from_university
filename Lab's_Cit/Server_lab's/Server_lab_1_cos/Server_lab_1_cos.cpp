@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	double param;
-	cout << "Enter the number for sin" << endl;
+	cout << "Enter the number for cos" << endl;
 	cin >> param;
 
 	WSADATA WsaData;
@@ -24,7 +24,7 @@ int main()
 
 	sn.sin_family = AF_INET;
 	sn.sin_port = htons(1180);
-	inet_pton(AF_INET, "192.168.1.14", &(sn.sin_addr.S_un.S_addr));
+	inet_pton(AF_INET, "192.168.43.97", &(sn.sin_addr.S_un.S_addr));
 
 	err = bind(s, (LPSOCKADDR)& sn, sizeof(sn));
 	err = listen(s, SOMAXCONN);

@@ -17,7 +17,7 @@ namespace clients_objects {
 
 		sin.sin_family = AF_INET;
 		sin.sin_port = htons(port);
-		inet_pton(AF_INET, "192.168.1.14", &(sin.sin_addr.S_un.S_addr));
+		inet_pton(AF_INET, "192.168.43.97", &(sin.sin_addr.S_un.S_addr));
 
 		err = connect(s, (const struct sockaddr*) & sin, sizeof(sin));
 

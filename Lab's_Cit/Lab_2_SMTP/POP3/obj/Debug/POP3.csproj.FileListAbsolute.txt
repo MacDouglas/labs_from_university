@@ -1,0 +1,7 @@
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\bin\Debug\POP3.exe.config
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\bin\Debug\POP3.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\bin\Debug\POP3.pdb
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\obj\Debug\POP3.csprojAssemblyReference.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\obj\Debug\POP3.csproj.CoreCompileInputs.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\obj\Debug\POP3.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\POP3\obj\Debug\POP3.pdb

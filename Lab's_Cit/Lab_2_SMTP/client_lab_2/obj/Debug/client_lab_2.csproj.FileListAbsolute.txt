@@ -1,0 +1,7 @@
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\bin\Debug\client_lab_2.exe.config
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\bin\Debug\client_lab_2.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\bin\Debug\client_lab_2.pdb
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\obj\Debug\client_lab_2.csprojAssemblyReference.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\obj\Debug\client_lab_2.csproj.CoreCompileInputs.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\obj\Debug\client_lab_2.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\client_lab_2\obj\Debug\client_lab_2.pdb

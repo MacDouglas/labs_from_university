@@ -1,0 +1,5 @@
+﻿  Server_lab_1_cos.cpp
+C:\Users\stalk_000\Desktop\VS project's\Lab's_СиТ\Server_lab's\Server_lab_1_cos\Server_lab_1_cos.cpp(22,8): warning C4244:  инициализация: преобразование "SOCKET" в "int", возможна потеря данных
+C:\Users\stalk_000\Desktop\VS project's\Lab's_СиТ\Server_lab's\Server_lab_1_cos\Server_lab_1_cos.cpp(32,9): warning C4244:  инициализация: преобразование "SOCKET" в "int", возможна потеря данных
+C:\Users\stalk_000\Desktop\VS project's\Lab's_СиТ\Server_lab's\Server_lab_1_cos\Server_lab_1_cos.cpp(35,13): warning C4244:  =: преобразование "SOCKET" в "int", возможна потеря данных
+  Server_lab_1_cos.vcxproj -> C:\Users\stalk_000\Desktop\VS project's\Lab's_СиТ\Server_lab's\x64\Debug\Server_lab_1_cos.exe

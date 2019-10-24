@@ -14,11 +14,11 @@ int main()
 	client B(1180);
 
 	cout << "Cos = " << B.get_param() << endl;
-	cout << "Tan = Sin/cos = " << tan(A.get_param() / B.get_param()) << endl;
+	cout << "Tan = Sin/cos = " << tan((A.get_param() / B.get_param())*3.14/180) << endl;
 	
 	client C(1280);
 	cout << "Div = " << C.get_param() << endl;
-	cout << "Tan = num1/num2 = " << tan(C.get_param()) << endl;
+	cout << "Tan = num1/num2 = " << tan(C.get_param()*3.14/180) << endl;
 
 	return 0;
 }

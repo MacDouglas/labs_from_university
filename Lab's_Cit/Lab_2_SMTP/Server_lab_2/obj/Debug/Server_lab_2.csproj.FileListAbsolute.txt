@@ -1,0 +1,14 @@
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\bin\Debug\Server_lab_2.exe.config
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\bin\Debug\Server_lab_2.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\bin\Debug\Server_lab_2.pdb
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.csprojAssemblyReference.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.csproj.CoreCompileInputs.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.pdb
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\bin\Debug\Server_lab_2.exe.config
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\bin\Debug\Server_lab_2.exe
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\bin\Debug\Server_lab_2.pdb
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.csprojAssemblyReference.cache
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.csproj.CoreCompileInputs.cache
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.exe
+C:\Users\stalk_000\Desktop\VS_projects\labs_from_university\Lab's_Cit\Lab_2_SMTP\Server_lab_2\obj\Debug\Server_lab_2.pdb

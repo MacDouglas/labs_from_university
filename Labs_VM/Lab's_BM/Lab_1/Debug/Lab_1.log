@@ -1,0 +1,5 @@
+﻿  Lab_1.cpp
+  method's.cpp
+  Создание кода...
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_BM\Lab's_BM\Lab_1\Lab_1.cpp(59,17): warning C4244:  аргумент: преобразование "double" в "std::streamsize", возможна потеря данных
+  Lab_1.vcxproj -> C:\Users\stalk_000\Desktop\VSproject's\Lab's_BM\Lab's_BM\Debug\Lab_1.exe

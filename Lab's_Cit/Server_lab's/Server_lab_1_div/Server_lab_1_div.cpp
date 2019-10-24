@@ -29,15 +29,15 @@ int main()
 
 	sn.sin_family = AF_INET;
 	sn.sin_port = htons(1280);
-	inet_pton(AF_INET, "192.168.1.14", &(sn.sin_addr.S_un.S_addr));
+	inet_pton(AF_INET, "192.168.43.97", &(sn.sin_addr.S_un.S_addr));
 
 	err = bind(s, (LPSOCKADDR)& sn, sizeof(sn));
 	err = listen(s, SOMAXCONN);
 
-	int s1 = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+	//int s1 = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	SOCKADDR_IN from;
 	int fromlen = sizeof(from);
-	s1 = accept(s, (struct sockaddr*) & from, &fromlen);
+	int s1 = accept(s, (struct sockaddr*) & from, &fromlen);
 
 	double ans = num1 / num2;
 	std::string str = to_string(ans);

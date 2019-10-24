@@ -1,0 +1,9 @@
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\bin\Debug\Browser.exe.config
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\bin\Debug\Browser.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\bin\Debug\Browser.pdb
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\obj\Debug\Browser.csprojAssemblyReference.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\obj\Debug\Browser.Properties.Resources.resources
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\obj\Debug\Browser.csproj.GenerateResource.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\obj\Debug\Browser.csproj.CoreCompileInputs.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\obj\Debug\Browser.exe
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_4_Browser\Browser\obj\Debug\Browser.pdb

@@ -9,3 +9,14 @@ C:\Users\Elias\Desktop\Visual_Studio\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netc
 C:\Users\Elias\Desktop\Visual_Studio\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.AssemblyInfo.cs
 C:\Users\Elias\Desktop\Visual_Studio\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.dll
 C:\Users\Elias\Desktop\Visual_Studio\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.pdb
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\bin\Debug\netcoreapp2.1\SMTP.deps.json
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\bin\Debug\netcoreapp2.1\SMTP.runtimeconfig.json
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\bin\Debug\netcoreapp2.1\SMTP.runtimeconfig.dev.json
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\bin\Debug\netcoreapp2.1\SMTP.dll
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\bin\Debug\netcoreapp2.1\SMTP.pdb
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.csprojAssemblyReference.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.csproj.CoreCompileInputs.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.AssemblyInfoInputs.cache
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.AssemblyInfo.cs
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.dll
+C:\Users\stalk_000\Desktop\VSproject's\Lab's_СиТ\Lab_2_SMTP\SMTP\obj\Debug\netcoreapp2.1\SMTP.pdb
