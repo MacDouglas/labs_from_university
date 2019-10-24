@@ -1,36 +1,42 @@
 #include "pch.h"
 #include "inheritance.h"
 
-
 using namespace std;
 
-namespace math_subjects {
-
+namespace lab
+{
 	int Base::counter = 0;
 
-	Base::Base() : rows(0), cols(0), matrix(0) {
+	Base::Base() : rows(0), cols(0), matrix(0)
+	{
 		identification();
 	}
-	Base::Base(int rows, int cols, double a) { // Квадратная с числом
+	Base::Base(int rows, int cols, double a)
+	{ // Квадратная с числом
 		create(rows, cols, a);
 	}
-	Base::Base(int rows, int cols, const double* a) { // Квадратная с числом
+	Base::Base(int rows, int cols, const double* a)
+	{ // Квадратная с числом
 		create(rows, cols, a);
 	}
-	Base::Base(int size, double a) {  // Прямоугольная с числом
+	Base::Base(int size, double a)
+	{  // Прямоугольная с числом
 		create(size, size, a);
 	}
-	Base::Base(int size, double const* a) {  // Прямоугольная с массивом
+	Base::Base(int size, double const* a)
+	{  // Прямоугольная с массивом
 		create(size, size, a);
 	}
-	Base::Base(const Base& other) {
-
+	Base::Base(const Base& other)
+	{
 		create(other.rows, other.cols, other.matrix);
 	}
-	Base::Base(Base && other) : Base() {  //Конструктор переноса
+	Base::Base(Base&& other) : Base()
+	{  //Конструктор переноса
 		swap(other);
 	}
-	void Base::swap(Base & a) {
+	void Base::swap(Base& a)
+	{
 		std::swap(matrix, a.matrix);
 		std::swap(cols, a.cols);
 		std::swap(rows, a.rows);
@@ -47,7 +53,8 @@ namespace math_subjects {
 
 		this->rows = rows;
 		this->cols = cols;
-		if (this->cols < 0 || this->rows < 0) {
+		if (this->cols < 0 || this->rows < 0)
+		{
 			throw "Не корректный размер матрицы - " + to_string(id);
 		}
 
@@ -55,39 +62,54 @@ namespace math_subjects {
 		if (size > 0)
 			matrix = new double[size];
 		else matrix = NULL;
-		if (!a) {
-			for (int i = 0; i < size; i++) {
+		if (!a)
+		{
+			for (int i = 0; i < size; i++)
+			{
 				matrix[i] = 0;
 			}
 		}
-		else if (a) {
-			for (int i = 0; i < size; i++) {
+		else if (a)
+		{
+			for (int i = 0; i < size; i++)
+			{
 				matrix[i] = *a;
 				a += off;
 			}
 		}
 	}
-	void Base::create(int rows, int cols, double a) {
+	void Base::create(int rows, int cols, double a)
+	{
 		create(rows, cols, &a, 0);
 	}
-	void Base::identification() {
+	int Base::getCols() const
+	{
+		return cols;
+	}
+	void Base::identification()
+	{
 		id = ++counter;
 		cout << "Конструктор объекта - " << id << endl;
 	}
 
-	int Base::get_id() const {
+	int Base::get_id() const
+	{
 		return id;
 	}
-	int Base::get_counter() {
+	int Base::get_counter()
+	{
 		return counter;
 	}
-	bool Base::sum_ans(const Base & b) const {
+	bool Base::sum_ans(const Base& b) const
+	{
 		return (cols == b.cols && rows == b.rows);
 	}
-	bool Base::multip_ans(const Base & b)const {
+	bool Base::multip_ans(const Base& b)const
+	{
 		return (cols == b.rows);
 	}
-	Base& Base::operator=(Base && other) {
+	Base& Base::operator=(Base&& other)
+	{
 		if (this != &other)
 			return *this;
 
@@ -100,8 +122,8 @@ namespace math_subjects {
 
 		return *this;
 	}
-	Base& Base::operator=(const Base & other) {
-
+	Base& Base::operator=(const Base& other)
+	{
 		if (cols * rows != other.cols * other.rows)
 		{
 			if (matrix)
@@ -120,7 +142,8 @@ namespace math_subjects {
 
 		return *this;
 	}
-	Base& Base::operator*=(const Base & b) {
+	Base& Base::operator*=(const Base& b)
+	{
 		if (!multip_ans(b))
 			throw "Операция *= невозможна, т.к. размеры матриц " + to_string(id) + " и " + to_string(b.get_id()) + " не совпадают!";
 
@@ -134,7 +157,8 @@ namespace math_subjects {
 
 	}
 
-	Base & Base::operator+=(const Base & b) {
+	Base& Base::operator+=(const Base& b)
+	{
 		if (!sum_ans(b))
 			throw "Операция += невозможна, т.к. размеры матриц " + to_string(id) + " и " + to_string(b.get_id()) + " не совпадают!";
 
@@ -143,7 +167,8 @@ namespace math_subjects {
 
 		return *this;
 	}
-	Base& Base::operator-=(const Base & b) {
+	Base& Base::operator-=(const Base& b)
+	{
 		if (!sum_ans(b))
 			throw "Операция -= невозможна, т.к. размеры матриц " + to_string(id) + " и " + to_string(b.get_id()) + " не совпадают!";
 
@@ -160,25 +185,33 @@ namespace math_subjects {
 		return *this;
 	}
 
-	Base operator+(const Base & a, const Base & b) {
+	Base operator+(const Base& a, const Base& b)
+	{
 		return Base(a) += b;
 	}
-	Base operator-(const Base & a, const Base & b) {
+	Base operator-(const Base& a, const Base& b)
+	{
 		return Base(a) -= b;
 	}
-	Base operator*(const Base & a, const Base & b) {
+	Base operator*(const Base& a, const Base& b)
+	{
 		return Base(a) *= b;
 	}
-	Base operator*(const Base & a, double k) {
+	Base operator*(const Base& a, double k)
+	{
 		return Base(a) *= k;
 	}
-	Base operator*(double k, const Base & a) {
+	Base operator*(double k, const Base& a)
+	{
 		return Base(a) *= k;
 	}
-	ostream& operator<<(ostream & ostream, const Base & a) {
+	ostream& operator<<(ostream& ostream, const Base& a)
+	{
 		std::streamsize width = ostream.width();
-		for (int i = 0; i < a.rows; i++) {
-			for (int j = 0; j < a.cols; j++) {
+		for (int i = 0; i < a.rows; i++)
+		{
+			for (int j = 0; j < a.cols; j++)
+			{
 				ostream.width(width);
 				ostream << a.matrix[i * a.cols + j];
 				if (!width)

@@ -2,10 +2,9 @@
 #define BASE_H
 
 #include <iostream>
-#include <type_traits>
 
-namespace math_subjects {
-
+namespace lab
+{
 	class Base
 	{
 	protected:
@@ -28,6 +27,7 @@ namespace math_subjects {
 		void create(int rows, int cols, const double* a, int = 1);
 		void create(int rows, int cols, double a);
 
+		int getCols() const;
 	public:
 		virtual ~Base();
 

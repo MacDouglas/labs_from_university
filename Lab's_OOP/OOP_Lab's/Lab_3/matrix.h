@@ -6,8 +6,8 @@
 #include <iostream> 
 
 
-namespace math_subjects {
-
+namespace lab
+{
 	class Matrix : public Base
 	{
 	private:
@@ -28,6 +28,9 @@ namespace math_subjects {
 
 		int getCols() const;
 		int getRows() const;
+
+		Matrix& operator*=(const Matrix& b);
+		Matrix& operator*=(double scal);
 
 		double* operator[](int num);
 		const double* operator[](int num) const;

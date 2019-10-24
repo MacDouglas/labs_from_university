@@ -5,8 +5,8 @@
 #include "matrix.h"
 #include <iostream> 
 
-namespace math_subjects {
-
+namespace lab
+{
 	class Vector : public Base
 	{
 	private:
@@ -24,13 +24,9 @@ namespace math_subjects {
 		~Vector();
 
 		int getSize() const;
-		int findRank(const Base & other) const ;
-		int findRank(Base&& other);
 
 		double& operator[](int num);
 		double operator[](int num) const;
-
-		Vector& operator=(const Vector& other);
 
 		Vector& operator=(const Base& other);
 		Vector& operator=(Base&& other);

@@ -7,15 +7,20 @@
 #include "vector.h"
 
 using namespace std;
-using namespace math_subjects;
+using namespace lab;
 
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-
-	Matrix a(3, 3, 1.0);
-	Vector b(3, 2.0);
-	Vector c(move(a));
+	//Base b(3, 3, 1.0);
+	//Matrix a(std::move(b));
+	Matrix c(3, 3, 1.0);
+	Matrix q = move(c);
+	Vector d(3, 2.0);
+	d = c;
+	Vector e(c);
+	e = c * d;
+	cout << e << endl;
 
 	return 0;
 }

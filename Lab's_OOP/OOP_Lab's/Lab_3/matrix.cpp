@@ -1,27 +1,45 @@
-#include "pch.h"
+ï»¿#include "pch.h"
 #include "matrix.h"
 
 using namespace std;
 
-namespace math_subjects {
+namespace lab
+{
+	Matrix::Matrix() : Base()
+	{
+	}
 
-	Matrix::Matrix() : Base() {}
+	Matrix::Matrix(int rows, int cols, double a) : Base(rows, cols, a)
+	{
+	}
+	Matrix::Matrix(int rows, int cols, const double* a) : Base(rows, cols, a)
+	{
+	}
 
-	Matrix::Matrix(int rows, int cols, double a) : Base(rows, cols, a) {}
-	Matrix::Matrix(int rows, int cols, const double* a) : Base(rows, cols, a) {}
+	Matrix::Matrix(int size, double a) : Base(size, size, a)
+	{
+	}
+	Matrix::Matrix(int size, const double* a) : Base(size, size, a)
+	{
+	}
 
-	Matrix::Matrix(int size, double a) : Base(size, size, a) { }
-	Matrix::Matrix(int size, const double* a) : Base(size, size, a) {}
+	Matrix::Matrix(const Matrix& other) : Base(other)
+	{
+	}
+	Matrix::Matrix(const Base& other) : Base(other)
+	{
+	}
 
-	Matrix::Matrix(const Matrix& other) : Base(other) {}
-	Matrix::Matrix(const Base& other) : Base(other) {}
-
-	Matrix::Matrix(Base&& other) : Base(std::move(other)) {}
-	Matrix::Matrix(Matrix&& other) : Base(std::move(other)) {}
+	Matrix::Matrix(Base&& other) : Base(std::move(other))
+	{
+	}
+	Matrix::Matrix(Matrix&& other) : Base(std::move(other))
+	{
+	}
 
 	Matrix::~Matrix()
 	{
-		cout << "Äåñòðóêòîð îáúåêòà êëàññà Matrix - " << id << endl;
+		cout << "Æ’ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° ÐºÐ»Ð°ÑÑÐ° Matrix - " << id << endl;
 	}
 	int Matrix::getCols() const
 	{
@@ -31,18 +49,20 @@ namespace math_subjects {
 	{
 		return rows;
 	}
-	double* Matrix::operator[](int num) {
+	double* Matrix::operator[](int num)
+	{
 		if (num >= rows || num < 0)
 		{
-			throw "Ýëåìåíò â ìàòðèöe - " + to_string(id) + " íå ñóùåñòâóåò!";
+			throw "ÐÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†e - " + to_string(id) + " Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 		}
 
 		return matrix + num * rows;
 	}
-	const double* Matrix::operator[](int num) const {
+	const double* Matrix::operator[](int num) const
+	{
 		if (num >= rows || num < 0)
 		{
-			throw "Ýëåìåíò â ìàòðèöe - " + to_string(id) + " íå ñóùåñòâóåò!";
+			throw "ÐÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†e - " + to_string(id) + " Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚!";
 		}
 
 		return matrix + num * rows;
@@ -60,7 +80,7 @@ namespace math_subjects {
 
 		return *this;
 	}
-	Matrix& Matrix::operator=(Matrix && other)
+	Matrix& Matrix::operator=(Matrix&& other)
 	{
 		if (this != &other) return *this;
 
