@@ -7,32 +7,42 @@ namespace math_subjects {
 
 	class polynom {
 	private:
-		double* index;
-		int n;
+		double *index;
+		int rank;
 	public:
+
 		explicit polynom(int = 0);
+
 		polynom(const double*, int);
-		polynom(int, const double*);
+		polynom(int, const double*,int off = 1);
+
 		polynom(const polynom&);
 		polynom(polynom&&);
+
 		~polynom();
-		void correct_deg();
-		int get_deg();
+
+		void deleteZeros();
+		int getRank() const;
+
+		double& operator [] (int num);
+		double operator [] (int num) const;
+		double operator () (double) const;
+
 		polynom& operator = (const polynom&);
 		polynom& operator = (polynom&&);
+
 		polynom& operator += (const polynom&);
 		polynom& operator -= (const polynom&);
 		polynom& operator *= (const polynom&);
 		polynom& operator /= (const polynom&);
 		polynom& operator %= (const polynom&);
+
 		friend polynom operator + (const polynom&, const polynom&);
 		friend polynom operator - (const polynom&, const polynom&);
 		friend polynom operator * (const polynom&, const polynom&);
 		friend polynom operator / (const polynom&, const polynom&);
 		friend polynom operator % (const polynom&, const polynom&);
-		double& operator [] (int a);
-		double operator [] (int a) const;
-		double operator () (double) const;
+		
 		friend std::ostream& operator << (std::ostream&, const polynom&);
 	};
 }

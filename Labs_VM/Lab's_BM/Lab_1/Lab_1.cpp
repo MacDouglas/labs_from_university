@@ -17,10 +17,10 @@ int main()
 	int key;
 	char  str1[1024];
 	char* str2;
-	
+
 	double x, fx, e;
-	double a,b,eps;
-	
+	double a, b, eps;
+
 	ifstream fin("input.txt");
 	if (!fin.is_open()) {
 		throw "File don't open!";
@@ -37,29 +37,29 @@ int main()
 	try {
 		str2 = CreatePolStr(str1, 0);
 		if (key == 1)
-		x = dihotomy(str2, a, b, eps, fx, e);
+			x = dihotomy(str2, a, b, eps, fx, e);
 		if (key == 2)
-		x = chord(str2, a, b, eps, fx, e);
+			x = chord(str2, a, b, eps, fx, e);
 		if (key == 3)
-		x = newton(str2, a, b, eps, fx, e);
+			x = newton(str2, a, b, eps, fx, e);
 		if (key == 4)
-		x = combined(str2, a, b, eps, fx, e);
+			x = combined(str2, a, b, eps, fx, e);
 		if (key == 5)
-		x = iteration(str2, a, b, eps, fx, e);
+			x = iteration(str2, a, b, eps, fx, e);
 		if (key == 6)
-		x = golden(str2, a, b, eps, fx, e);
+			x = golden(str2, a, b, eps, fx, e);
 	}
 	catch (exception e) {
 		cout << e.what() << endl;
 	}
 	//cout.precision(-log10(eps));
 	//cout<< "x= " << x << "f(x)= " << fx << endl;
-	
+
 	ofstream fout("output.txt");
 	fout.precision(-log10(eps));
-	fout << fixed <<"x= " << x << "\n";
-	fout << fixed << "f(x)= "<< fx <<"\n";
-	fout << "eps= "<< scientific << e;
+	fout << fixed << "x= " << x << "\n";
+	fout << fixed << "f(x)= " << fx << "\n";
+	fout << "eps= " << scientific << e;
 
 	return 0;
 }

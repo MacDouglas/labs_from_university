@@ -11,13 +11,14 @@ namespace math_subjects {
 		int num,denom;
 	public:
 		fraction();
-		fraction(int, int );
+		fraction(int num);
+		fraction(int num, int denom);
 		
 		void reduce();
-		int nod(int, int);
-		int nok(int, int);
+		int nod(unsigned a, unsigned b);
+		int nok(unsigned a, unsigned b);
 
-		int findWhole();
+		int findInteger();
 
 		int getNum() const;
 		int getDenom() const;

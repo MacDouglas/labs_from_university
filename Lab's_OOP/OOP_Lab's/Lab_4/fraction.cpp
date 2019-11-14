@@ -1,12 +1,13 @@
-#include "fraction.h"
 #include "pch.h"
+#include "fraction.h"
+#include <sstream>
 
 using namespace std;
 
 namespace math_subjects {
 
-	fraction::fraction():num(0),denom(0){}
-	
+	fraction::fraction():fraction(0,0){}
+	fraction::fraction(int num) : fraction(num, num) {}
 	fraction::fraction(int num, int denom)
 	{
 		this->num = num;
@@ -18,15 +19,14 @@ namespace math_subjects {
 	void fraction::reduce()
 	{
 		if (denom == 0)
-		{
 			throw "Error! Denominator shouldn't be zero";
-		}
+
 		int tmp = nod(num, denom);
 		num /= tmp;
 		denom /= tmp;
 	}
 	
-	int fraction::nod(int a, int b)
+	int fraction::nod(unsigned a, unsigned b) 
 	{
 		if (a == 0 || b == 0) {
 			return a + b;
@@ -34,21 +34,20 @@ namespace math_subjects {
 		if (a > b) {
 			return nod(a - b, b);
 		}
-		else
-			return nod(a, b - a);
+		return nod(a, b - a);
 	}
 
-	int fraction::nok(int a, int b)
+	int fraction::nok(unsigned a, unsigned b) 
 	{
 		return a*b/nod(a,b);
 	}
 
-	int fraction::findWhole()
+	int fraction::findInteger() 
 	{
-		int whole = num/denom;
+		int integer = num/denom;
 		num = num % denom;
 
-		return whole;
+		return integer;
 	}
 
 	int fraction::getNum() const
@@ -69,16 +68,17 @@ namespace math_subjects {
 	void fraction::setDenom(int denom)
 	{
 		this->denom = denom;
+
+		reduce();
 	}
 
-	fraction& fraction::operator += (const fraction& a)				//знаментаели умножить на НОК, а не друг на друга
+	fraction& fraction::operator += (const fraction& a)				
 	{
 		if (this->denom != a.denom)
 		{
-			fraction tmp;
-			tmp.denom = nok(this->denom,a.denom);
-			tmp.num = this->num * (tmp.denom/this->denom) + a.num * (tmp.denom / a.denom);
-			*this = move(tmp);
+			int tmp = nok(this->denom,a.denom);
+			num = num * (tmp/denom) + a.num * (tmp/a.denom);
+			denom = tmp;
 		}
 		else
 			this->num += a.num;
@@ -92,21 +92,25 @@ namespace math_subjects {
 	{
 		if (this->denom != a.denom)
 		{
-			fraction tmp;
-			tmp.denom = nok(this->denom, a.denom);
-			tmp.num = this->num * (tmp.denom / this->denom) - a.num * (tmp.denom / a.denom);
-			*this = move(tmp);
+			int tmp = nok(this->denom, a.denom);
+			num = num * (tmp / denom) - a.num * (tmp / a.denom);
+			denom = tmp;
 		}
 		else
 			this->num -= a.num;
+		
 		reduce();
 		return *this;
 	}
 
-	fraction& fraction::operator *= (const fraction& a)
+	fraction& fraction::operator *= (const fraction& a) // 
 	{
-		this->num *= a.num;
-		this->denom *= a.denom;
+		int tmp1 = nod(num, a.denom);
+		int tmp2 = nod(a.num, denom);
+
+		this->num = (num / tmp1) * (a.num / tmp2);
+		this->denom = (denom / tmp2) * (a.denom / tmp1);
+		
 		reduce();
 		return *this;
 	}
@@ -121,9 +125,9 @@ namespace math_subjects {
 
 	ostream& operator << (ostream& stream, const fraction& a)
 	{
-		streamsize size = stream.width();
-		stream.width(size);
-		stream << a.num << '/' << a.denom;
+		stringstream ss;
+		ss << a.num << '/' << a.denom;
+		stream << ss.str();
 		return stream;
 	}
 

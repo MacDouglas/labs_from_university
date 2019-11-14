@@ -1,9 +1,1 @@
-﻿  inheritance.cpp
-  Lab_3.cpp
-  matrix.cpp
-  pch.cpp
-  vector.cpp
-C:\Users\Elias\Desktop\Visual_Studio\Lab's_OOP\OOP_Lab's\Lab_3\matrix.cpp(42,11): warning C4566:  символ, представленный универсальным именем символа "\u0192", невозможно представить в текущей кодовой странице (1251)
-  Создание кода...
-C:\Users\Elias\Desktop\Visual_Studio\Lab's_OOP\OOP_Lab's\Lab_3\vector.cpp(36,11): warning C4566:  символ, представленный универсальным именем символа "\u0192", невозможно представить в текущей кодовой странице (1251)
-  Lab_3.vcxproj -> C:\Users\Elias\Desktop\Visual_Studio\Lab's_OOP\OOP_Lab's\Debug\Lab_3.exe
+﻿  Lab_3.vcxproj -> C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Debug\Lab_3.exe

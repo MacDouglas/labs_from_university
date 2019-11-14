@@ -5,36 +5,32 @@ using namespace std;
 
 namespace math_subjects {
 
-	polynom::polynom(int k) : polynom(k, 0)
-	{
-	}
+	polynom::polynom(int r) : polynom(r, 0) {}
 
-	polynom::polynom(const double* a, int k) : polynom(k, a)
-	{
-	}
+	polynom::polynom(const double* a, int r) : polynom(r, a) {}
 
-	polynom::polynom(int k, const double* a)
+	polynom::polynom(int r, const double* a,int off)
 	{
-		if (k < 0)
-			throw "Negative degree";
-		//cout << "Polynomial created" << endl;
-		this->n = k;
-		index = new double[n + 1];
+		if (r < 0)
+			throw "Rank should be > or = 0";
+
+		this->rank = r;
+		index = new double[rank + 1];
 		if (a)
-			for (int i = 0; i <= n; i++)
-				index[i] = a[i];
+			for (int i = 0; i <= rank; i++) {
+				index[i] = *a;
+				a += off;
+			}
 		else
-			for (int i = 0; i <= n; i++)
+			for (int i = 0; i <= rank; i++)
 				index[i] = 0;
 	}
 
-	polynom::polynom(const polynom& a) : polynom(a.n, a.index)
-	{
-	}
+	polynom::polynom(const polynom& a) : polynom(a.rank, a.index){}
 
 	polynom::polynom(polynom&& a) : polynom()
 	{
-		swap(n, a.n);
+		swap(rank, a.rank);
 		swap(index, a.index);
 	}
 
@@ -42,30 +38,30 @@ namespace math_subjects {
 	{
 		if (index)
 			delete[] index;
-		//cout << "Polynomial deleted" << endl;
 	}
 
-	void polynom::correct_deg()					//удаление нолей старшей степени
+	void polynom::deleteZeros()
 	{
-		if (n > 0)
+		if (rank> 0)
 		{
-			int x = n;
-			if (index[x] == 0)
-			{
-				do
-				{
-					x--;
-				} while (x && index[x] == 0);
+			int x = rank;
+
+			while (index[x] == 0 && x) {
+				x--;
 			}
-			if (x != n)
+
+			if (x != rank)
 			{
-				polynom tmp(n);
+				polynom tmp(rank);
 				tmp = move(*this);
-				delete[] index;
-				index = NULL;
-				index = new double[x + 1];
-				n = x;
-				for (int i = 0; i <= n; i++)
+				
+				if(index)
+					delete[] index;
+				
+				rank = x;
+				index = new double[rank + 1];
+				
+				for (int i = 0; i <= rank; i++)
 				{
 					index[i] = tmp.index[i];
 				}
@@ -73,28 +69,72 @@ namespace math_subjects {
 		}
 	}
 
-	int polynom::get_deg()
+	int polynom::getRank() const
 	{
-		return n;
+		return rank;
+	}
+
+	double polynom::operator () (double x) const
+	{
+		double num = index[0];
+		for (int i = 1; i <= rank; i++)
+		{
+			num += index[i] * pow(x, i);
+		}
+		return num;
+	}
+
+	double& polynom::operator [] (int num)
+	{
+		if (num < 0 || num >= rank+ 1)
+		{
+			throw "Incorrect index";
+		}
+		return *(index + num);
+	}
+
+	double polynom::operator [] (int num) const
+	{
+		if (num < 0 || num >= rank + 1)
+		{
+			throw "Incorrect index";
+		}
+		return index[num];
 	}
 
 	polynom& polynom::operator= (const polynom& a)
 	{
-		if (this->n != a.n)
+		if (this->rank != a.rank)
 		{
 			if (index)
 				delete[] index;
-			this->n = a.n;
-			index = new double[n + 1];
+			
+			this->rank = a.rank;
+			
+			if (a.index)
+			{
+				index = new double[rank + 1];
+			}
+			else
+				index = NULL;
+
 		}
-		for (int i = 0; i <= n; i++)
+		for (int i = 0; i <= rank; i++)
 			this->index[i] = a.index[i];
+		
 		return *this;
 	}
 
 	polynom& polynom::operator= (polynom&& a)
 	{
-		swap(n, a.n);
+		if (this != &a)
+			return *this;
+
+		if (index)
+			delete[] index;
+		rank = 0;
+
+		swap(rank, a.rank);
 		swap(index, a.index);
 		return *this;
 	}
@@ -102,16 +142,16 @@ namespace math_subjects {
 	polynom& polynom::operator+= (const polynom& a)
 	{
 		polynom tmp;
-		if (n >= a.n)
+		if (rank>= a.rank)
 		{
 			tmp = *this;
-			for (int i = 0; i <= a.n; i++)
+			for (int i = 0; i <= a.rank; i++)
 				tmp.index[i] += this->index[i];
 		}
 		else
 		{
 			tmp = a;
-			for (int i = 0; i <= n; i++)
+			for (int i = 0; i <= rank; i++)
 				tmp.index[i] += this->index[i];
 		}
 		return *this = move(tmp);
@@ -120,16 +160,16 @@ namespace math_subjects {
 	polynom& polynom::operator-= (const polynom& a)
 	{
 		polynom tmp;
-		if (n >= a.n)
+		if (rank>= a.rank)
 		{
 			tmp = *this;
-			for (int i = 0; i <= a.n; i++)
+			for (int i = 0; i <= a.rank; i++)
 				tmp.index[i] -= this->index[i];
 		}
 		else
 		{
 			tmp = a;
-			for (int i = 0; i <= n; i++)
+			for (int i = 0; i <= rank; i++)
 				tmp.index[i] -= this->index[i];
 		}
 		return *this = move(tmp);
@@ -137,10 +177,10 @@ namespace math_subjects {
 
 	polynom& polynom::operator*= (const polynom& a)
 	{
-		polynom tmp(this->n + a.n);
-		for (int i = 0; i <= n; i++)
+		polynom tmp(this->rank+ a.rank);
+		for (int i = 0; i <= rank; i++)
 		{
-			for (int j = 0; j <= a.n; j++)
+			for (int j = 0; j <= a.rank; j++)
 			{
 				tmp.index[i + j] += index[i] * a.index[j];
 			}
@@ -150,68 +190,51 @@ namespace math_subjects {
 
 	polynom& polynom::operator/= (const polynom& a)
 	{
-		if (a.index[a.n] == 0)
-			throw "Div on zero";
-		if (n < a.n)
+		if (a.index[a.rank] == 0)
+			throw "Delete last zeros";
+
+		if (rank < a.rank)
 			return *this;
-		int difference = n - a.n;
+
+		int difference = rank - a.rank;
 		polynom res(difference);
+
 		for (int i = 0; i <= difference; i++)
 		{
-			res.index[difference - i] = index[n - i] / a.index[a.n];
-			for (int j = 0; j <= a.n; j++)
+			res.index[difference - i] = index[rank - i] / a.index[a.rank];
+			for (int j = 0; j <= a.rank; j++)
 			{
-				index[n - j - i] -= a.index[a.n - j] * res.index[difference - i];
+				index[rank - j - i] -= a.index[a.rank- j] * res.index[difference - i];
 			}
 		}
-		res.correct_deg();
+
+		res.deleteZeros();
 		return *this = move(res);
 	}
 
 	polynom& polynom::operator%= (const polynom& a)
 	{
-		if (a.index[a.n] == 0)
-			throw "Div on zero";
-		if (n < a.n)
+		if (a.index[a.rank] == 0)
+			throw "Delete last zeros";
+
+		if (rank < a.rank)
 			return *this;
+
 		double k;
-		for (int i = 0; i <= n - a.n; i++)
+
+		for (int i = 0; i <=rank- a.rank; i++)
 		{
-			k = index[n - i] / a.index[a.n];
-			for (int j = 0; j <= a.n; j++)
-				index[n - i - j] -= a.index[a.n - j] * k;
+			k = index[rank - i] / a.index[a.rank];
+
+			for (int j = 0; j <= a.rank; j++)
+				index[rank - i - j] -= a.index[a.rank- j] * k;
 		}
-		correct_deg();
+
+		deleteZeros();
 		return *this;
 	}
 
-	double polynom::operator () (double x) const
-	{
-		double num = index[0];
-		for (int i = 1; i <= n; i++)
-		{
-			num += index[i] * pow(x, i);
-		}
-		return num;
-	}
-
-	double& polynom::operator [] (int a)
-	{
-		if (a < 0 || a >= n + 1)
-		{
-			throw "Incorrect index";
-		}
-		return *(index + a);
-	}
-
-	double polynom::operator [] (int a) const
-	{
-		if (a < 0 || a >= n + 1)
-		{
-			throw "Incorrect index";
-		}
-		return index[a];
-	}
+	
 
 	polynom operator+ (const polynom& a, const polynom& b)
 	{
@@ -250,24 +273,16 @@ namespace math_subjects {
 
 	ostream& operator<< (ostream& stream, const polynom& a)
 	{
-		/*stream << a.index [0];
-		if (a.n)
-			for (int i = 1; i <= a.n; i++)
-			{
-				stream.setf (ios::showpos);
-				stream << a.index [i];
-				stream.unsetf (ios::showpos);
-				stream << "*X^" << i;
-			}*/
 		streamsize size = stream.width();
-		for (int i = 0; i <= a.n; i++)
+		for (int i = 0; i <= a.rank; i++)
 		{
 			stream.width(size);
 			stream.setf(ios::showpos);
-			stream << a.index[a.n - i];
+			stream << a.index[a.rank- i];
 			stream.unsetf(ios::showpos);
-			stream << 'X' << '^' << a.n - i;
+			stream << 'X' << '^' << a.rank - i;
 		}
+	
 		return stream;
 	}
 

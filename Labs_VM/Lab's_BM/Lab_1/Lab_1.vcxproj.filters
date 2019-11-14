@@ -15,25 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\Lab_1.cpp">
+    <ClCompile Include="..\..\Lab%27s_BM\Lab_1\Lab_1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="method%27s.cpp">
+    <ClCompile Include="..\..\Lab%27s_BM\Lab_1\method%27s.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\PolStr.h">
+    <ClInclude Include="..\..\Lab%27s_BM\Lab_1\method%27s.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="method%27s.h">
+    <ClInclude Include="..\..\Lab%27s_BM\Lab_1\PolStr.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\PolStr.lib" />
+    <Library Include="..\..\Lab%27s_BM\Lab_1\PolStr.lib" />
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\PolStr.obj" />
+    <Object Include="..\..\Lab%27s_BM\Lab_1\PolStr.obj" />
   </ItemGroup>
 </Project>

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{33E3C2D5-7746-4FEC-A596-A21415A47626}</ProjectGuid>
+    <ProjectGuid>{C102031B-C711-4141-AE80-1B9CF23B2E1C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Lab1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -151,18 +151,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="method%27s.cpp" />
-    <ClCompile Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\Lab_1.cpp" />
+    <ClCompile Include="..\..\Lab%27s_BM\Lab_1\Lab_1.cpp" />
+    <ClCompile Include="..\..\Lab%27s_BM\Lab_1\method%27s.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="method%27s.h" />
-    <ClInclude Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\PolStr.h" />
+    <ClInclude Include="..\..\Lab%27s_BM\Lab_1\method%27s.h" />
+    <ClInclude Include="..\..\Lab%27s_BM\Lab_1\PolStr.h" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\PolStr.lib" />
+    <Library Include="..\..\Lab%27s_BM\Lab_1\PolStr.lib" />
   </ItemGroup>
   <ItemGroup>
-    <Object Include="..\..\..\..\VSproject%27s\Lab%27s_BM\Lab%27s_BM\Lab_1\PolStr.obj" />
+    <Object Include="..\..\Lab%27s_BM\Lab_1\PolStr.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
