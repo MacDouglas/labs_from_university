@@ -10,29 +10,31 @@ using namespace math_subjects;
 
 int main()
 {
-	fraction a(1, 3);
-	fraction b(2, 5);
+	/*fraction a(10, -2);
+	fraction b(2);
 	a *= b;
 
 	cout << a << endl;
-	cout << b << endl;
+	cout << b << endl;*/
 	//a.findWhole();
 	//a += b;
 	
-	/*double str[] = { -42,-12,1};
-	double str1[] = { -3,1 };
+	double str[] = { 3,-3};
+	double str1[] = { 42,12,-1};
 
-	fraction f1 = 5;
-	fraction f(2,5);
-	cout << setw(10) << f*2 << endl;
 
-	polynom a(2, str);
-	polynom b(1, str1);
+	polynom a(1, str);
+	polynom b(2,str1);
+
+	//b = a;
+
 	cout << a << endl;
 	cout << b << endl;
 	
-	a /= b;
-	cout << a;*/
+	a -= b;
+	//b /= a;
+	//a.deleteZeros();
+	cout << a;
 
 	//cout << "Divide = " << a.divide() << endl;
 	return 0;

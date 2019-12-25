@@ -6,9 +6,7 @@ using namespace std;
 
 namespace math_subjects {
 
-	fraction::fraction():fraction(0,0){}
-	fraction::fraction(int num) : fraction(num, num) {}
-	fraction::fraction(int num, int denom)
+	fraction::fraction(int num , int denom )
 	{
 		this->num = num;
 		this->denom = denom;
@@ -21,12 +19,17 @@ namespace math_subjects {
 		if (denom == 0)
 			throw "Error! Denominator shouldn't be zero";
 
-		int tmp = nod(num, denom);
+		if (denom < 0) {
+			num = -num;
+			denom = -denom;
+		}
+
+		int tmp = nod(abs(num), denom);
 		num /= tmp;
 		denom /= tmp;
 	}
 	
-	int fraction::nod(unsigned a, unsigned b) 
+	int fraction::nod(int a, int b) 
 	{
 		if (a == 0 || b == 0) {
 			return a + b;
@@ -37,7 +40,7 @@ namespace math_subjects {
 		return nod(a, b - a);
 	}
 
-	int fraction::nok(unsigned a, unsigned b) 
+	int fraction::nok(int a, int b) 
 	{
 		return a*b/nod(a,b);
 	}
@@ -45,7 +48,7 @@ namespace math_subjects {
 	int fraction::findInteger() 
 	{
 		int integer = num/denom;
-		num = num % denom;
+		num %= denom;
 
 		return integer;
 	}
@@ -63,6 +66,8 @@ namespace math_subjects {
 	void fraction::setNom(int num)
 	{
 		this->num = num;
+
+		reduce();
 	}
 
 	void fraction::setDenom(int denom)
@@ -158,5 +163,4 @@ namespace math_subjects {
 		c /= b;
 		return c;
 	}
-
 }

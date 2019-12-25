@@ -1,0 +1,20 @@
+﻿  Lab_5.cpp
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(31,11): warning C4244:  инициализация: преобразование "T" в "int", возможна потеря данных
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(31,11): warning C4244:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(31,11): warning C4244:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(31,11): warning C4244:             T=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(31,11): warning C4244:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(22): message :  во время компиляции функции-члена класс шаблон "void math_subjects::fraction<double>::reduce(void)"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(17): message :  выполняется компиляция ссылки на экземпляр шаблон функции "void math_subjects::fraction<double>::reduce(void)"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(13): message :  во время компиляции функции-члена класс шаблон "math_subjects::fraction<double>::fraction(T,T)"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(13): message :         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(13): message :         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(13): message :             T=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\fraction.cpp(13): message :         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\Lab_5.cpp(15): message :  выполняется компиляция ссылки на экземпляр шаблон функции "math_subjects::fraction<double>::fraction(T,T)"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\Lab_5.cpp(15): message :         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\Lab_5.cpp(15): message :         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\Lab_5.cpp(15): message :             T=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\Lab_5.cpp(15): message :         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_5\Lab_5.cpp(15): message :  выполняется компиляция ссылки на экземпляр класс шаблон функции "math_subjects::fraction<double>"
+  Lab_5.vcxproj -> C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Debug\Lab_5.exe

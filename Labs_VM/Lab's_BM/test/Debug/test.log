@@ -1,2 +1,14 @@
 ﻿  test.cpp
-  test.vcxproj -> C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Debug\test.exe
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(17,29): error C2440:  инициализация: невозможно преобразовать "std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>>" в "std::list<double,std::allocator<_Ty>>"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(17,29): error C2440:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(17,29): error C2440:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(17,29): error C2440:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(17,29): error C2440:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(17,18): message :  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,16): error C2100:  недопустимое косвенное обращение
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,16): error C2440:  инициализация: невозможно преобразовать "std::list<double,std::allocator<_Ty>>" в "double"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,16): error C2440:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,16): error C2440:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,16): error C2440:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,16): error C2440:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\test\test.cpp(19,11): message :  Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен

@@ -1,0 +1,79 @@
+﻿  Lab_5.cpp
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(21,33): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(22,35): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(24,39): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(25,39): error C2061:  синтаксическая ошибка: идентификатор "vector"
+  Newton.cpp
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Lab_5.cpp(22,20): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(21,33): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(22,35): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(24,39): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.h(25,39): error C2061:  синтаксическая ошибка: идентификатор "vector"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(30,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(33,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(37,21): warning C4018:  <: несоответствие типов со знаком и без знака
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C3867:  "std::vector<double,std::allocator<_Ty>>::size": нестандартный синтаксис; используйте "&", чтобы создать указатель на член
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C3867:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C3867:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C3867:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C3867:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C2446:  >: нет преобразования "int" в "unsigned int (__thiscall std::vector<double,std::allocator<_Ty>>::* )(void) noexcept const"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C2446:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C2446:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C2446:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,17): error C2446:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(67,16): message :  Не существует преобразований из целых значений в указатели на члены
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C3867:  "std::vector<double,std::allocator<_Ty>>::size": нестандартный синтаксис; используйте "&", чтобы создать указатель на член
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C3867:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C3867:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C3867:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C3867:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C2296:  -: недопустимо, левый операнд имеет тип "unsigned int (__thiscall std::vector<double,std::allocator<_Ty>>::* )(void) noexcept const"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C2296:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C2296:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C2296:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(78,27): error C2296:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C3867:  "std::vector<double,std::allocator<_Ty>>::size": нестандартный синтаксис; используйте "&", чтобы создать указатель на член
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C3867:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C3867:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C3867:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C3867:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C2296:  -: недопустимо, левый операнд имеет тип "unsigned int (__thiscall std::vector<double,std::allocator<_Ty>>::* )(void) noexcept const"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C2296:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C2296:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C2296:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(79,27): error C2296:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C3867:  "std::vector<double,std::allocator<_Ty>>::size": нестандартный синтаксис; используйте "&", чтобы создать указатель на член
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C3867:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C3867:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C3867:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C3867:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C2296:  -: недопустимо, левый операнд имеет тип "unsigned int (__thiscall std::vector<double,std::allocator<_Ty>>::* )(void) noexcept const"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C2296:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C2296:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C2296:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(81,66): error C2296:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C3867:  "std::vector<double,std::allocator<_Ty>>::size": нестандартный синтаксис; используйте "&", чтобы создать указатель на член
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C3867:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C3867:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C3867:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C3867:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C2446:  ==: нет преобразования "int" в "unsigned int (__thiscall std::vector<double,std::allocator<_Ty>>::* )(void) noexcept const"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C2446:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C2446:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C2446:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,23): error C2446:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(83,22): message :  Не существует преобразований из целых значений в указатели на члены
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C3867:  "std::vector<double,std::allocator<_Ty>>::size": нестандартный синтаксис; используйте "&", чтобы создать указатель на член
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C3867:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C3867:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C3867:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C3867:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C2446:  <: нет преобразования "unsigned int (__thiscall std::vector<double,std::allocator<_Ty>>::* )(void) noexcept const" в "int"
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C2446:         with
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C2446:         [
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C2446:             _Ty=double
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,29): error C2446:         ]
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(99,25): message :  Не существует контекста, в котором такое преобразование возможно
+  Создание кода...
+C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Lab_5\Newton.cpp(154,21): warning C4018:  <: несоответствие типов со знаком и без знака

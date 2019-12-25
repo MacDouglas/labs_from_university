@@ -7,7 +7,7 @@ using namespace math_subjects;
 
 int main()
 {
-	double** a, * y, * x;
+	double** a,*b, *x;
 	int m,n, epsSize = 3;
 	double eps = 0.001, tmp;
 
@@ -19,35 +19,31 @@ int main()
 
 		fin >> m;
 		fin >> n;
-		a = new double* [n+1];
+		a = new double*[n];
+		b = new double[n];
+		x = new double[n];
 
-		for (int i = 0 , sizei = n + 1; i < sizei; i++) {
+		for (int i = 0; i < n; i++) {
 			
-			a[i] = new double[n + 1];
+			a[i] = new double[n];
 			
-			for (int j = 0, sizej = n + 1; j < sizej; j++) {
+			for (int j = 0; j < n + 1; j++) {
 				
 				fin >> tmp;
 				
-				if(j == n)
-					a[i][j] = -tmp;
-				else
+				if (j == n) {
+					b[i] = tmp;
+				}
+				else {
 					a[i][j] = tmp;
-				
-				if (i == n)
-					if (j == n)
-						a[i][j] = 1;
-					else
-						a[i][j] = 0;
+				}
 			}
 		}
 
 		fin.close();
 	}
-	//fout << "matrix A = ";
-	printMatr(a, n + 1, 5);
 
-	orthogonalization(a, n + 1);
+	initOrthogonalization(n, initMatrix(n,a,b), a, b);
 
 	//ofstream fout("output.txt");
 	//fout.precision(-log10(eps));
@@ -58,9 +54,10 @@ int main()
 	
 	//fout.close();
 
-	for (int i =  0; i < n + 1; i++)
-		delete[] a[i];
-	delete[] a;
+	clear(a, n);
+	delete[] b; 
+	delete[] x;
+
 
 	return 0;
 }

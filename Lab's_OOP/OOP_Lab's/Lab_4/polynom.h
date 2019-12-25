@@ -8,7 +8,7 @@ namespace math_subjects {
 	class polynom {
 	private:
 		double *index;
-		int rank;
+		int rank,capacity;
 	public:
 
 		explicit polynom(int = 0);
@@ -22,6 +22,7 @@ namespace math_subjects {
 		~polynom();
 
 		void deleteZeros();
+		//void pack();
 		int getRank() const;
 
 		double& operator [] (int num);

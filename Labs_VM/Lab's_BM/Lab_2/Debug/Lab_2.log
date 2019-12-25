@@ -1,2 +1,5 @@
-﻿  methods.cpp
+﻿  Lab_2.cpp
+  methods.cpp
+  Создание кода...
+PolStr.obj : warning LNK4099: "vc142.pdb" PDB не найден с "PolStr.obj" или на "C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Debug\vc142.pdb"; компоновка объекта выполняется как при отсутствии отладочных данных
   Lab_2.vcxproj -> C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Labs_VM\Lab's_BM\Debug\Lab_2.exe
