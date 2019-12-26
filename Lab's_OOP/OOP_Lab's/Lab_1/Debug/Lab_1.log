@@ -1,6 +1,1 @@
-﻿  pch.cpp
-  Lab_1.cpp
-  vector_func's.cpp
-  Создание кода...
-C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Lab_1\vector_func's.cpp(17,9): warning C4244:  =: преобразование "double" в "int", возможна потеря данных
-  Lab_1.vcxproj -> C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Lab's_OOP\OOP_Lab's\Debug\Lab_1.exe
+﻿  Lab_1.vcxproj -> C:\Users\Elias\Desktop\labs_from_university\Lab's_OOP\OOP_Lab's\Debug\Lab_1.exe

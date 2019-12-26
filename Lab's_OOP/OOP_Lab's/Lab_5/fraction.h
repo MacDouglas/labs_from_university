@@ -1,4 +1,3 @@
-#pragma once
 #ifndef FRACTION_H
 #define FRACTION_H
 
@@ -6,25 +5,24 @@
 
 namespace math_subjects {
 
-	template <class T>
 	class fraction
 	{
 	private:
-		T num, denom;
+		int num, denom;
 	public:
 
-		fraction(T num, T denom);
+		fraction(int num = 0, int denom = 1);
 
 		void reduce();
-		static T nod(T a, T b);
-		static T nok(T a, T b);
-		
-		T findInteger();
+		static int nod(int a, int b);
+		static int nok(int a, int b);
 
-		T getNum() const;
-		T getDenom() const;
-		void setNom(T);
-		void setDenom(T);
+		int findInteger();
+
+		int getNum() const;
+		int getDenom() const;
+		void setNom(int);
+		void setDenom(int);
 
 		fraction& operator += (const fraction&);
 		fraction& operator -= (const fraction&);
@@ -41,4 +39,3 @@ namespace math_subjects {
 }
 
 #endif
-#include "fraction.cpp"

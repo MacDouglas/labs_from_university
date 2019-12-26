@@ -1,6 +1,4 @@
-#pragma once
-#ifndef FRACTION_CPP
-#define FRACTION_CPP
+#include "pch.h"
 #include "fraction.h"
 #include <sstream>
 
@@ -8,8 +6,7 @@ using namespace std;
 
 namespace math_subjects {
 
-	template<class T>
-	fraction<T>::fraction(T num, T denom)
+	fraction::fraction(int num, int denom)
 	{
 		this->num = num;
 		this->denom = denom;
@@ -17,14 +14,13 @@ namespace math_subjects {
 		reduce();
 	}
 
-	template<class T>
-	void fraction<T>::reduce()
+	void fraction::reduce()
 	{
 		if (denom == 0)
 			throw "Error! Denominator shouldn't be zero";
 
 		if (denom < 0) {
-			num = num;
+			num = -num;
 			denom = -denom;
 		}
 
@@ -33,8 +29,7 @@ namespace math_subjects {
 		denom /= tmp;
 	}
 
-	template<class T>
-	T	fraction<T>::nod(T a, T b)
+	int fraction::nod(int a, int b)
 	{
 		if (a == 0 || b == 0) {
 			return a + b;
@@ -45,55 +40,48 @@ namespace math_subjects {
 		return nod(a, b - a);
 	}
 
-	template <class T>
-	T fraction<T>::nok(T a, T b)
+	int fraction::nok(int a, int b)
 	{
 		return a * b / nod(a, b);
 	}
 
-	template <class T>
-	T fraction<T>::findInteger()
+	int fraction::findInteger()
 	{
-		T integer = num / denom;
+		int integer = num / denom;
 		num %= denom;
 
 		return integer;
 	}
 
-	template <class T>
-	T fraction<T>::getNum() const
+	int fraction::getNum() const
 	{
 		return num;
 	}
 
-	template <class T>
-	T fraction<T>::getDenom() const
+	int fraction::getDenom() const
 	{
 		return denom;
 	}
 
-	template <class T>
-	void fraction<T>::setNom(T num)
+	void fraction::setNom(int num)
 	{
 		this->num = num;
 
 		reduce();
 	}
 
-	template <class T>
-	void fraction<T>::setDenom(T denom)
+	void fraction::setDenom(int denom)
 	{
 		this->denom = denom;
 
 		reduce();
 	}
-	
-	template <class T>
-	fraction<T>& fraction<T>::operator += (const fraction<T>& a)
+
+	fraction& fraction::operator += (const fraction& a)
 	{
 		if (this->denom != a.denom)
 		{
-			T tmp = nok(this->denom, a.denom);
+			int tmp = nok(this->denom, a.denom);
 			num = num * (tmp / denom) + a.num * (tmp / a.denom);
 			denom = tmp;
 		}
@@ -104,12 +92,12 @@ namespace math_subjects {
 
 		return *this;
 	}
-	template <class T>
-	fraction<T>& fraction<T>::operator -= (const fraction<T>& a)
+
+	fraction& fraction::operator -= (const fraction& a)
 	{
 		if (this->denom != a.denom)
 		{
-			T tmp = nok(this->denom, a.denom);
+			int tmp = nok(this->denom, a.denom);
 			num = num * (tmp / denom) - a.num * (tmp / a.denom);
 			denom = tmp;
 		}
@@ -120,11 +108,10 @@ namespace math_subjects {
 		return *this;
 	}
 
-	template <class T>
-	fraction<T>& fraction<T>::operator *= (const fraction<T>& a) // 
+	fraction& fraction::operator *= (const fraction& a) // 
 	{
-		T tmp1 = nod(num, a.denom);
-		T tmp2 = nod(a.num, denom);
+		int tmp1 = nod(num, a.denom);
+		int tmp2 = nod(a.num, denom);
 
 		this->num = (num / tmp1) * (a.num / tmp2);
 		this->denom = (denom / tmp2) * (a.denom / tmp1);
@@ -132,51 +119,48 @@ namespace math_subjects {
 		reduce();
 		return *this;
 	}
-	template <class T>
-	fraction<T>& fraction<T>::operator /= (const fraction<T>& a)
+
+	fraction& fraction::operator /= (const fraction& a)
 	{
 		this->num *= a.denom;
 		this->denom *= a.num;
 		reduce();
 		return *this;
 	}
-	
-	template <class U>
-	ostream& operator << (ostream& stream, const fraction<U>& a)
+
+	ostream& operator << (ostream& stream, const fraction& a)
 	{
 		stringstream ss;
 		ss << a.num << '/' << a.denom;
 		stream << ss.str();
 		return stream;
 	}
-	template <class T>
-	fraction<T> operator+ (const fraction<T>& a, const fraction<T>& b)
+
+	fraction operator+ (const fraction& a, const fraction& b)
 	{
-		fraction<T> c = a;
+		fraction c = a;
 		c += b;
 		return c;
 	}
-	template <class T>
-	fraction<T> operator- (const fraction<T>& a, const fraction<T>& b)
+
+	fraction operator- (const fraction& a, const fraction& b)
 	{
 		fraction c = a;
 		c -= b;
 		return c;
 	}
-	template <class T>
-	fraction<T> operator* (const fraction<T>& a, const fraction<T>& b)
+
+	fraction operator* (const fraction& a, const fraction& b)
 	{
 		fraction c = a;
 		c *= b;
 		return c;
 	}
-	template <class T>
-	fraction<T> operator/ (const fraction<T>& a, const fraction<T>& b)
+
+	fraction operator/ (const fraction& a, const fraction& b)
 	{
 		fraction c = a;
 		c /= b;
 		return c;
 	}
 }
-
-#endif

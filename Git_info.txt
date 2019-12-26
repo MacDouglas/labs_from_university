@@ -33,5 +33,6 @@ git branch -a				//Посмотреть все ветки
 git checkout имя_ветки			//Перейти к ветке
 git checkout -b имя_ветки		//Создание новой ветки и переход на неё
 
+git clone https://github.com/MacDouglas/labs_from_university.git
 git remote add origin git@github.com:MacDouglas/labs_from_university.git
 git push -u origin master 		//Отправка в файлов GitHub
