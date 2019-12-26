@@ -98,11 +98,11 @@ namespace Lab_6
             }
             throw new ArgumentException($"Операция * невозможна, т.к. размеры матриц #{a.id} и #{b.id} не совпадают!");
         }
-        public static Matrix operator *(Matrix matr, double scal)
+        public static Matrix operator *(Matrix a, double num)
         {
-            for (int i = 0; i < matr.rows * matr.cols; i++)
-                matr.matrix[i] *= scal;
-            return matr;
+            for (int i = 0; i < a.rows * a.cols; i++)
+                a.matrix[i] *= num;
+            return a;
         }
         public double this[int i, int j]
         {
@@ -146,12 +146,12 @@ namespace Lab_6
             }
             return s.ToString();
         }
-        public IEnumerator<double> GetEnumerator()
+        public IEnumerator<double> GetEnumerator()              //перечислитель, который поддерживает простой перебор элементов неуниверсальной коллекции
         {
             foreach (double i in matrix)
-                yield return i;
+                yield return i;                                 //используется для возврата каждого элемента по одному.
         }
-        IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator()                 //Возвращает перечислитель, который осуществляет итерацию по коллекции.
         {
             return matrix.GetEnumerator();
         }
