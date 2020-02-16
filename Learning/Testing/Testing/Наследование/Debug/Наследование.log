@@ -1,0 +1,99 @@
+﻿  polynomal.cpp
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(10,37): error C2086: const  T maths::t_polynomial<T>::zero: переопределение
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(20): message : см. объявление "maths::t_polynomial<T>::zero"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(14,24): error C2995: bool maths::t_polynomial<T>::cmp_zero(const T &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(22): message : см. объявление "maths::t_polynomial<T>::cmp_zero"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(20,19): error C2995: maths::t_polynomial<T>::t_polynomial(size_t,std::function<T(int)>): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(25): message : см. объявление "maths::t_polynomial<T>::t_polynomial"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(33,19): error C2995: maths::t_polynomial<T>::t_polynomial(const T &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(24): message : см. объявление "maths::t_polynomial<T>::t_polynomial"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(39,19): error C2995: maths::t_polynomial<T>::t_polynomial(std::initializer_list<std::pair<const T&,unsigned int>>): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(27): message : см. объявление "maths::t_polynomial<T>::t_polynomial"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(51,19): error C2995: maths::t_polynomial<T>::t_polynomial(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(28): message : см. объявление "maths::t_polynomial<T>::t_polynomial"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(57,19): error C2995: maths::t_polynomial<T>::t_polynomial(maths::t_polynomial<T> &&): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(29): message : см. объявление "maths::t_polynomial<T>::t_polynomial"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(63,20): error C2995: maths::t_polynomial<T>::~t_polynomial(void): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(31): message : см. объявление "maths::t_polynomial<T>::~t_polynomial"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(66,16): error C2995: std::ostream &maths::operator <<(std::ostream &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(66): message : см. объявление "maths::operator <<"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(83,21): error C2995: T maths::t_polynomial<T>::operator ()(const T &) const: шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(71): message : см. объявление "maths::t_polynomial<T>::operator ()"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(99,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::norm(void): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(72): message : см. объявление "maths::t_polynomial<T>::norm"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(110,24): error C2995: bool maths::t_polynomial<T>::operator !(void) const: шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(36): message : см. объявление "maths::t_polynomial<T>::operator !"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(116,26): error C2995: size_t maths::t_polynomial<T>::get_degree(void) const: шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(37): message : см. объявление "maths::t_polynomial<T>::get_degree"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(122,28): error C2995: const T &maths::t_polynomial<T>::operator [](size_t) const: шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(39): message : см. объявление "maths::t_polynomial<T>::operator []"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(131,22): error C2995: T &maths::t_polynomial<T>::operator [](size_t): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(40): message : см. объявление "maths::t_polynomial<T>::operator []"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(140,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator =(const T &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(44): message : см. объявление "maths::t_polynomial<T>::operator ="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(149,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator =(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(42): message : см. объявление "maths::t_polynomial<T>::operator ="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(157,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator =(maths::t_polynomial<T> &&): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(43): message : см. объявление "maths::t_polynomial<T>::operator ="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(165,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator +=(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(46): message : см. объявление "maths::t_polynomial<T>::operator +="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(182,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator -=(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(47): message : см. объявление "maths::t_polynomial<T>::operator -="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(200,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator *=(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(48): message : см. объявление "maths::t_polynomial<T>::operator *="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(230,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator /=(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(50): message : см. объявление "maths::t_polynomial<T>::operator /="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(238,36): error C2995: maths::t_polynomial<T> &maths::t_polynomial<T>::operator %=(const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(51): message : см. объявление "maths::t_polynomial<T>::operator %="
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(246,18): error C2995: maths::t_polynomial<T> maths::operator +(const maths::t_polynomial<T> &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(246): message : см. объявление "maths::operator +"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(256,18): error C2995: maths::t_polynomial<T> maths::operator -(const maths::t_polynomial<T> &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(256): message : см. объявление "maths::operator -"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(266,18): error C2995: maths::t_polynomial<T> maths::operator *(const maths::t_polynomial<T> &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(266): message : см. объявление "maths::operator *"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(277,48): error C2995: std::pair<maths::t_polynomial<T>,maths::t_polynomial<T>> maths::modf(const maths::t_polynomial<T> &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(277): message : см. объявление "maths::modf"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(312,18): error C2995: maths::t_polynomial<T> maths::operator /(const maths::t_polynomial<T> &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(312): message : см. объявление "maths::operator /"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(318,18): error C2995: maths::t_polynomial<T> maths::operator %(const maths::t_polynomial<T> &,const maths::t_polynomial<T> &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(318): message : см. объявление "maths::operator %"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(329,29): error C2995: bool maths::t_polynomial<double>::cmp_zero(const T &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(329,29): error C2995:         with
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(329,29): error C2995:         [
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(329,29): error C2995:             T=double
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(329,29): error C2995:         ]
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(22): message : см. объявление "maths::t_polynomial<double>::cmp_zero"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(337,28): error C2995: bool maths::t_polynomial<float>::cmp_zero(const T &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(337,28): error C2995:         with
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(337,28): error C2995:         [
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(337,28): error C2995:             T=float
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(337,28): error C2995:         ]
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(22): message : см. объявление "maths::t_polynomial<float>::cmp_zero"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(345,34): error C2995: bool maths::t_polynomial<long double>::cmp_zero(const T &): шаблон функции уже определен
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(345,34): error C2995:         with
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(345,34): error C2995:         [
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(345,34): error C2995:             T=long double
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(345,34): error C2995:         ]
+  rational.cpp
+  Наследование.cpp
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.h(22): message : см. объявление "maths::t_polynomial<long double>::cmp_zero"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(25,22): warning C4018: <=: несоответствие типов со знаком и без знака
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(21): message : во время компиляции функции-члена класс шаблон "maths::t_polynomial<maths::my_rational>::t_polynomial(size_t,std::function<T (int)>)"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(21): message :         with
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(21): message :         [
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(21): message :             T=maths::my_rational
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(21): message :         ]
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(16): message : выполняется компиляция ссылки на экземпляр шаблон функции "maths::t_polynomial<maths::my_rational>::t_polynomial(size_t,std::function<T (int)>)"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(16): message :         with
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(16): message :         [
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(16): message :             T=maths::my_rational
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(16): message :         ]
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(16): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "maths::t_polynomial<maths::my_rational>"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(213,14): error C2039: min: не является членом "std"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\functional(24): message : см. объявление "std"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(201): message : во время компиляции функции-члена класс шаблон "maths::t_polynomial<maths::my_rational> &maths::t_polynomial<maths::my_rational>::operator *=(const maths::t_polynomial<maths::my_rational> &)"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(270): message : выполняется компиляция ссылки на экземпляр шаблон функции "maths::t_polynomial<maths::my_rational> &maths::t_polynomial<maths::my_rational>::operator *=(const maths::t_polynomial<maths::my_rational> &)"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(52): message : во время компиляции функции-члена класс шаблон "maths::t_polynomial<maths::my_rational>::t_polynomial(const maths::t_polynomial<maths::my_rational> &)"
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\Наследование.cpp(27): message : выполняется компиляция ссылки на экземпляр шаблон функции "maths::t_polynomial<maths::my_rational>::t_polynomial(const maths::t_polynomial<maths::my_rational> &)"
+  Создание кода...
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Наследование\polynomal.cpp(213,1): error C3861: min: идентификатор не найден

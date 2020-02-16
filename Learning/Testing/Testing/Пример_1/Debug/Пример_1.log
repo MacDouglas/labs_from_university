@@ -1,4 +1,4 @@
 ﻿  pch.cpp
   Пример_1.cpp
-C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Learning\Testing\Testing\Пример_1\Пример_1.cpp(69,12): warning C4244:  аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Пример_1.vcxproj -> C:\Users\stalk_000\Desktop\VSprojects\labs_from_university\Learning\Testing\Testing\Debug\Пример_1.exe
+C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Пример_1\Пример_1.cpp(69,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Пример_1.vcxproj -> C:\Users\Elias\Desktop\labs_from_university\Learning\Testing\Testing\Debug\Пример_1.exe
