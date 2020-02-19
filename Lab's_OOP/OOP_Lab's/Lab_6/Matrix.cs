@@ -12,14 +12,14 @@ namespace Lab_6
         public int rows { get; private set; }
         public int cols { get; private set; }
         public int id { get; private set; }
-        private static int сounter { get; set; }
-       
+        public static int сounter { get; private set; }
+
         public Matrix()
         {
             this.id = ++сounter;
             Console.WriteLine($"Конструктор матрицы {id}");
         }
-       
+
         public Matrix(int rows, int cols) : this()
         {
             if (rows > 0 && cols > 0)
@@ -29,23 +29,32 @@ namespace Lab_6
                 this.matrix = new double[rows * cols];
             }
             else if (rows < 0 || cols < 0)
-                throw new ArgumentOutOfRangeException($"Не корректный размер матрицы {id}");
+                throw new ArgumentOutOfRangeException($"Некорректный размер матрицы {id}");
         }
         public Matrix(int rows, int cols, params double[] arr) : this(rows, cols)
         {
             for (int i = 0; i < rows * cols; i++)
                 this.matrix[i] = arr[i];
         }
-        public Matrix(int rows, int cols, Func<int, double> fun) : this(rows, cols)
+        public Matrix(int rows, int cols, Func<int, int, double> fun) : this(rows, cols)
         {
-            for (int i = 0; i < rows * cols; i++)
-                this.matrix[i] = fun(i);
+            for (int i = 0; i < rows; i++)
+                for (int j = 0; j < cols; j++)
+                    this.matrix[i * cols + j] = fun(i, j);
         }
         public Matrix(int size) : this(size, size) {}
         public Matrix(int size, params double[] arr) : this(size, size, arr) {}
         ~Matrix()
         {
             Console.WriteLine($"Деструктор матрицы {id}");
+        }
+        public IEnumerator<double> GetEnumerator()              //перечислитель, который поддерживает простой перебор элементов неуниверсальной коллекции
+        {
+            return (matrix as IEnumerable<double>).GetEnumerator();
+        }
+        IEnumerator IEnumerable.GetEnumerator()                 //Возвращает перечислитель, который осуществляет итерацию по коллекции.
+        {
+            return matrix.GetEnumerator();
         }
         public Matrix Clone()
         {
@@ -67,9 +76,9 @@ namespace Lab_6
         {
             if (Matrix.sum_ans(a, b))
             {
-                Matrix tmp = new Matrix(a.rows, a.cols);
+                Matrix tmp = a.Clone();
                 for (int i = 0; i < a.rows * a.cols; i++)
-                    tmp.matrix[i] = a.matrix[i] + b.matrix[i];
+                    tmp.matrix[i] += b.matrix[i];
                 return a;
             }
             throw new ArgumentException($"Операция + невозможна, т.к. размеры матриц #{a.id} и #{b.id} не совпадают!");
@@ -78,9 +87,9 @@ namespace Lab_6
         {
             if (Matrix.sum_ans(a, b))
             {
-                Matrix tmp = new Matrix(a.rows, a.cols);
+                Matrix tmp = a.Clone();
                 for (int i = 0; i < a.rows * a.cols; i++)
-                    tmp.matrix[i] = a.matrix[i] - b.matrix[i];
+                    tmp.matrix[i] -= b.matrix[i];
                 return a;
             }
             throw new ArgumentException($"Операция - невозможна, т.к. размеры матриц #{a.id} и #{b.id} не совпадают!");
@@ -96,13 +105,17 @@ namespace Lab_6
                             tmp.matrix[i * tmp.cols + j] += a.matrix[i * a.cols + k] * b.matrix[k * b.cols + j];
                 return tmp;
             }
-            throw new ArgumentException($"Операция * невозможна, т.к. размеры матриц #{a.id} и #{b.id} не совпадают!");
+            throw new ArgumentException($"Операция * невозможна, т.к. размеры матриц #{a.id} и #{b.id} не соответствуют!");
         }
         public static Matrix operator *(Matrix a, double num)
         {
             for (int i = 0; i < a.rows * a.cols; i++)
                 a.matrix[i] *= num;
             return a;
+        }
+        public static Matrix operator *(double num, in Matrix a)
+        {
+            return a * num;
         }
         public double this[int i, int j]
         {
@@ -146,15 +159,7 @@ namespace Lab_6
             }
             return s.ToString();
         }
-        public IEnumerator<double> GetEnumerator()              //перечислитель, который поддерживает простой перебор элементов неуниверсальной коллекции
-        {
-            foreach (double i in matrix)
-                yield return i;                                 //используется для возврата каждого элемента по одному.
-        }
-        IEnumerator IEnumerable.GetEnumerator()                 //Возвращает перечислитель, который осуществляет итерацию по коллекции.
-        {
-            return matrix.GetEnumerator();
-        }
+
     }
 }
 

@@ -10,24 +10,21 @@ namespace Lab_6
     {
         static void Main(string[] args)
         {
-            //double[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            //Matrix a = new Matrix(3, 3, arr);
+            //Func<int, double> ident = i => ;
+            double[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Matrix a = new Matrix(3, 3, arr);
             //Matrix b = a.Clone();
             //Console.WriteLine(a);
-            //b += a;
+           // b += a;
             //Console.WriteLine(b);
             //Matrix c = b * a;
             //Console.WriteLine(c);
-            //double k = 1.5;
-            //a *= k;
+
+            a[0,0] = 0;
             //Console.WriteLine(a);
-
-            double[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            Matrix a = new Matrix(3, 3, arr);
-            double k = 1.5;
-            a *= k;
-            Console.WriteLine(a);
-
+            Console.WriteLine(a.AsEnumerable<double>());
+            Console.WriteLine(a.cols);
+            Console.ReadKey();
         }
     }
 }
