@@ -53,6 +53,7 @@ public:
     QLabel *label_5;
     QLineEdit *lineEdit_w;
     QSpacerItem *horizontalSpacer_2;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -174,6 +175,9 @@ public:
 
         gridLayout->addItem(horizontalSpacer_2, 1, 5, 1, 1);
 
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(490, 290, 80, 21));
         cusplot->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(cusplot);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -208,6 +212,7 @@ public:
         label_A->setText(QCoreApplication::translate("cusplot", "\320\220\320\274\320\277\320\273\320\270\321\202\321\203\320\264\320\260", nullptr));
         label_5->setText(QCoreApplication::translate("cusplot", "\320\232\320\276\321\215\321\204 \320\260", nullptr));
         lineEdit_w->setText(QCoreApplication::translate("cusplot", "0.2", nullptr));
+        pushButton->setText(QCoreApplication::translate("cusplot", "mergeMaxMin", nullptr));
     } // retranslateUi
 
 };

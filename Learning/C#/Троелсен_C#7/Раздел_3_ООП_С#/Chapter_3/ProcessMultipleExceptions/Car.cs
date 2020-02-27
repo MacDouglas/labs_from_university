@@ -50,11 +50,11 @@ namespace ProcessMultipleExceptions
                         CurrentSpeed = 0;
                         carIsDead = true;
 
-                        Exception ex = new Exception($"{PetName} has overheated");
-                        ex.HelpLink = "http://www.carsRUs.com";
-
-                        ex.Data.Add("Times stamp", $"The car exploded ad {DateTime.Now}");
-                        ex.Data.Add("Cause", "You have a lead foot.");
+                        CarIsDeadException ex = new CarIsDeadException($"{PetName} has overheated","You have a lead foot",DateTime.Now);
+                        
+                        //ex.HelpLink = "http://www.carsRUs.com";
+                        //ex.Data.Add("Times stamp", $"The car exploded ad {DateTime.Now}");
+                        //ex.Data.Add("Cause", "You have a lead foot.");
 
                         throw ex;
                         //throw new Exception($"{PetName} has overheated!");

@@ -35,8 +35,9 @@ private:
 
     double dA,dw;                       //Расчетная переменная Амплитуды и фазы
 
-    QVector<double> coordinateX,coordinateY,x1,y1;                          //Координаты X,Y - Исходные координаты
+    QVector<double> coordinateX,coordinateY;                          //Координаты X,Y - Исходные координаты
     QVector<double> inputSmooth,outputSmooth,pointsMax,pointsMin,posMax,posMin;         //Массивы для скользящего среднего, Значений минимума/максимума, позиций минимума/максимума
+    QVector<double> pointsMergeMaxMin,posMerge;                       //Слияние максимумов и минимумов. (возможно отсортированы)
 
     QString A,w,a,f;            //
 
@@ -46,6 +47,7 @@ private:
 
     void findAllMax();
     void findAllMin();
+    void FindMergeMaxAndMin();
 
     void smoothFilter(int n,int window);
     void createSmoothMass(int n,int window);
@@ -59,6 +61,7 @@ private slots:
     void on_smoothButton_clicked();
     void on_findAllMax_clicked();
     void on_findAllMin_clicked();
+    void on_pushButton_clicked();
 };
 
 #endif // CUSPLOT_H

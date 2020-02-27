@@ -1,5 +1,6 @@
 #include "cusplot.h"
 #include "ui_cusplot.h"
+#include "QDebug"
 
 void cusplot::smoothFilter(int n,int window)
 {
@@ -101,7 +102,7 @@ void cusplot::resizeSmoothMass(int n,int window){
 void cusplot::findAllMax()
 {
     double max = 0, pos = 0;
-    for (int i = 0, j = 0; i < outputSmooth.size() - 1; i++)
+    for (int i = 0, j = 0; i < outputSmooth.size() - 2; i++)
     {
 
         if ((outputSmooth[i + 1] > outputSmooth[i]) && (outputSmooth[i + 2] > outputSmooth[i + 1]) && (outputSmooth[i + 2] > outputSmooth[i])) {
@@ -110,6 +111,7 @@ void cusplot::findAllMax()
 
         }
         else if (max != 0) {
+            qDebug() << "Max = " <<max << "PosMax = " << pos;
             pointsMax.push_back(max);
             posMax.push_back(pos);
 
@@ -121,7 +123,7 @@ void cusplot::findAllMax()
 void cusplot::findAllMin() {
 
     double min = 0, pos = 0;
-    for (int i = 0, j = 0; i < outputSmooth.size() - 1; i++)
+    for (int i = 0, j = 0; i < outputSmooth.size() - 2; i++)
     {
 
         if ((outputSmooth[i + 1] < outputSmooth[i]) && (outputSmooth[i + 2] < outputSmooth[i + 1]) && (outputSmooth[i + 2] < outputSmooth[i])) {
@@ -130,11 +132,27 @@ void cusplot::findAllMin() {
 
         }
         else if (min != 0) {
-            pointsMax.push_back(min);
-            posMax.push_back(pos);
+            qDebug() << "Min = " <<min << "PosMin = " << pos;
+            pointsMin.push_back(min);
+            posMin.push_back(pos);
 
             j++;
             min = 0;
         }
     }
+}
+void cusplot::FindMergeMaxAndMin()
+{
+    if(pointsMax.isEmpty() == true && pointsMin.isEmpty() == true){
+        QMessageBox::warning(this,"Внимание! ","Необходимо вычислить mergeMaxMin !");
+    }
+    else
+    {
+        for (int i = 0, size = posMax.size(); i < size; i++) {
+            //if(posMax[0] > posMin[0])
+
+        }
+
+    }
+
 }

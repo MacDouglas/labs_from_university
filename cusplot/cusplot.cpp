@@ -62,7 +62,23 @@ void cusplot::on_findAllMin_clicked()
         findAllMin();
 
         wGraphic->addGraph(wGraphic->xAxis, wGraphic->yAxis);
-        wGraphic->graph(0)->setData(posMax,pointsMax);
+        wGraphic->graph(0)->setData(posMin,pointsMin);
         wGraphic->replot();
     }
+}
+
+void cusplot::on_pushButton_clicked()
+{
+    if(pointsMergeMaxMin.isEmpty() == true){
+        QMessageBox::warning(this,"Внимание! ","Необходимо вычислить mergeMaxMin !");
+    }
+    else{
+
+        FindMergeMaxAndMin();
+
+        //wGraphic->addGraph(wGraphic->xAxis, wGraphic->yAxis);
+        //wGraphic->graph(0)->setData(posMerge,pointsMergeMaxMin);
+        //wGraphic->replot();
+    }
+
 }
